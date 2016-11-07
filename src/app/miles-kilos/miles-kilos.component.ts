@@ -10,8 +10,12 @@ export class MilesKilosComponent implements OnInit {
   clickMessage: number;
   constructor() { }
 
-  onClickMe(kilometres: number) {
-    this.clickMessage = kilometres *1.609;
+  milesToKilos(kilometres: number) {
+    this.clickMessage = kilometres * 1.609;
+  }
+
+  kilosToMiles(miles: number) {
+    this.clickMessage = miles * 0.609;
   }
 
   ngOnInit() {

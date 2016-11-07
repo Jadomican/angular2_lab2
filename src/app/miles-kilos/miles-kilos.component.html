@@ -1,7 +1,17 @@
 <p>
   <input #myMessage myMessage.value='' />
 
-  <button (click)="onClickMe(myMessage.value)">Click me!</button>
+  <button placeholder="Miles" (click)="milesToKilos(myMessage.value)">Click me!</button>
+
+</p>
+
+<h3 class="message">{{clickMessage}} miles</h3>
+
+
+<p>
+  <input #myMessage myMessage.value='' />
+
+  <button placeholder="Miles" (click)="kilosToMiles(myMessage.value)">Click me!</button>
 
 </p>
 
