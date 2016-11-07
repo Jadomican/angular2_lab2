@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MilesKilosComponent implements OnInit {
 
-  clickMessage: string = "";
+  clickMessage: number;
   constructor() { }
 
-  onClickMe(myMessage: string) {
-    this.clickMessage = myMessage;
+  onClickMe(kilometres: number) {
+    this.clickMessage = kilometres *1.609;
   }
 
   ngOnInit() {
